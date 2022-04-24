@@ -160,10 +160,14 @@
                     <div class="row">
                         <div class="col-md-offset-2 col-md-8 col-xs-12">
                             <div class="ot-heading text-center">
-                                <h6><span>Get a Free Quote</span></h6>
-                                <h2 class="main-heading">Talk With Our Digital Strategists</h2>
-                                <p>Complete the order form. Fill in all required information.Mind that you have to be as specific as possible to get the best possible results. You should keep in mind that, to ensure you get exactly the paper you want, you
-                                    need to be precise in your instructions.</p>
+                                <!-- <h6><span></span></h6> -->
+                                <h2 class="main-heading">Submit your Work To DW WRITERS</h2>
+                                <p>Complete the order form. Fill in all required information. Mind that you have to be as specific as possible to get the best possible results. You should keep in mind that, to ensure you
+                                                                        get exactly the paper you want, you need to be precise in your instructions.<br />
+                                                                        <br /> Once the writing process is over, we'll send it to your email & you will be able to download it.<br />
+                                                                        <br /> The price of the order is based on the requirements, level of academic competence, size of the text(Number of Pages) and urgency.<br />
+                                                                        <br /> Purchase Protected by PayPal.
+                                                                      </p>
                             </div>
                         </div>
                     </div>
@@ -172,79 +176,268 @@
             <section class="m-b100">
                 <div class="container">
                     <div class="wpcf7">
-                        <form action="freeaquote.php" method="POST" class="wpcf7-form">
+                        <!-- <form action="freeaquote.php" method="POST" class="wpcf7-form"> -->
                             <div class="faq-form row">
-                                <p class="col-md-6 col-xs-12">
-                                    <input type="url" name="website" class="wpcf7-form-control wpcf7-text" placeholder="Type Of Paper *">
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Type of Paper</label>
+                                    <input type="url" name="website" class="wpcf7-form-control wpcf7-text jstypeofpaper" placeholder="Type Of Paper *">
                                 </p>
-                                <p class="col-md-6 col-xs-12">
-                                    <input type="text" name="company" class="wpcf7-form-control wpcf7-text" placeholder="Company Name" required="">
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Academic Level</label>
+                                    <input type="text" name="company" class="wpcf7-form-control wpcf7-text jsacademiclevel" placeholder="Academic Level" required="">
                                 </p>
-                                <p class="col-md-6 col-xs-12">
-                                    <input type="text" name="fname" class="wpcf7-form-control wpcf7-text" placeholder="First Name *" required="">
-                                </p>
-                                <p class="col-md-6 col-xs-12">
-                                    <input type="text" name="lname" class="wpcf7-form-control wpcf7-text" placeholder="Last Name *" required="">
-                                </p>
-                                <p class="col-md-6 col-xs-12">
-                                    <input type="tel" name="phone" class="wpcf7-form-control wpcf7-text wpcf7-tel" placeholder="Phone Number *" required="">
-                                </p>
-                                <p class="col-md-6 col-xs-12">
-                                    <input type="email" name="email" class="wpcf7-form-control wpcf7-text wpcf7-email" placeholder="Your Email *" required="">
-                                </p>
+
                                 <p class="col-md-12 col-xs-12 multi-checkbox">
-                                    <label>Reason To Contact</label><br>
-                                    <span class="wpcf7-form-control-wrap your-option">
-                                        <span class="wpcf7-form-control wpcf7-checkbox">
-                                            <span class="wpcf7-list-item first">
-                                                <label>
-                                                    <input type="checkbox" name="name[]" value="Academic Writing Service">
-                                                    <span class="wpcf7-list-item-label">Academic Writing Service</span>
-                                    </label>
-                                    </span>
-                                    <span class="wpcf7-list-item">
-                                                <label>
-                                                    <input type="checkbox" name="name[]" value="Blog Writing Service">
-                                                    <span class="wpcf7-list-item-label">Blog Writing Service</span>
-                                    </label>
-                                    </span>
-                                    <span class="wpcf7-list-item">
-                                                <label>
-                                                    <input type="checkbox" name="name[]" value="Article Writing Service">
-                                                    <span class="wpcf7-list-item-label">Article Writing Service</span>
-                                    </label>
-                                    </span>
-                                    <span class="wpcf7-list-item">
-                                                <label>
-                                                    <input type="checkbox" name="name[]" value="SEO Content Writing Service">
-                                                    <span class="wpcf7-list-item-label">SEO Content Writing Service</span>
-                                    </label>
-                                    </span>
-                                    <span class="wpcf7-list-item">
-                                                <label>
-                                                    <input type="checkbox" name="name[]" value="Custom Content Writing Service">
-                                                    <span class="wpcf7-list-item-label">Custom Content Writing Service</span>
-                                    </label>
-                                    </span>
-                                    <span class="wpcf7-list-item last">
-                                                <label>
-                                                    <input type="checkbox" name="name[]" value="Social Media Writing Service">
-                                                    <span class="wpcf7-list-item-label">Social Media Writing Service</span>
-                                    </label>
-                                    </span>
-                                    </span>
+                                  <label>Type of Paper</label><br>
+
+                                  <span class="wpcf7-form-control-wrap your-option">
+
+                                        <span class="wpcf7-list-item ">
+
+                                                  <!-- <input type="radio" name="pprtyperbtn" value="MLA" >
+                                                  <span class="wpcf7-list-item-label">MLA</span><br />
+
+                                                  <input type="radio" name="pprtyperbtn" value="APA" >
+                                                  <span class="wpcf7-list-item-label">APA</span><br />
+
+                                                  <input type="radio" name="pprtyperbtn" value="Chicago/Turabian" >
+                                                  <span class="wpcf7-list-item-label">Chicago/Turabian</span><br />
+
+                                                  <input type="radio" name="pprtyperbtn" value="Not Applicable" >
+                                                  <span class="wpcf7-list-item-label">Not Applicable</span><br />
+
+                                                  <input type="radio" name="pprtyperbtn" value="Others" >
+                                                  <span class="wpcf7-list-item-label">Others</span><br /> -->
+
+                                                  <select id="dropdownpprtyperbtn" name="" class="dropdownpapertype" my_choice_order_type="">
+                                                    <option value="MLA" selected="selected" my_order_property="first"> MLA</option>
+                                                    <option value="APA"  >APA</option>
+                                                    <option value="Chicago/Turabian"  >Chicago/Turabian</option>
+                                                    <option value="Not Applicable"  >Not Applicable</option>
+                                                    <option value="Others"  >Others</option>
+                                                  </select>
+
+                                        </span>
+                                        <!-- <span class="wpcf7-list-item">
+
+
+
+                                        </span>
+                                        <span class="wpcf7-list-item last">
+
+
+
+                                        </span>
+                                        <span class="wpcf7-list-item last">
+
+
+
+                                        </span>
+                                        <span class="wpcf7-list-item last">
+
+
+
+                                        </span> -->
                                     </span>
                                 </p>
                                 <p class="col-md-12 col-xs-12">
-                                    <textarea type="text" name="message" class="wpcf7-form-control wpcf7-textarea" placeholder="Your Message"></textarea>
+                                  <label>Subject/Discipline</label><br />
+                                    <select id="dropdownsubject" name="element_2" class="dropdownsubject_discipline" my_choice_order_type="">
+                                      <option value="" selected="selected" my_order_property="first">Select Subject</option>
+                                      <option value="Accounting"  data-cost="5">Accounting</option>
+                                      <option value="Agriculture"  >Agriculture</option>
+                                      <option value="Anthropology"  >Anthropology</option>
+                                      <option value="Application Letter"  >Application Letter</option>
+                                      <option value="Architecture, Building and Planning"  >Architecture, Building and Planning</option>
+                                      <option value="Art (Fine Art, Perfoming Art)"  >Art (Fine Art, Perfoming Art)</option>
+                                      <option value="Astronomy"  >Astronomy</option>
+                                      <option value="Aviation"  >Aviation</option>
+                                      <option value="Biology"  >Biology</option>
+                                      <option value="Business Studies"  >Business Studies</option>
+                                      <option value="Chemistry"  >Chemistry</option>
+                                      <option value="Civil Engineering"  >Civil Engineering</option>
+                                      <option value="Classic English Litreature"  >Classic English Litreature</option>
+                                      <option value="Communication"  >Communication</option>
+                                      <option value="Composition"  >Composition</option>
+                                      <option value="Computer Science"  >Computer Science</option>
+                                      <option value="Criminal Justice"  >Criminal Justice</option>
+                                      <option value="Criminal Law"  >Criminal Law</option>
+                                      <option value="Cultural and Ethic Study"  >Cultural and Ethic Study</option>
+                                      <option value="Ecology"  >Ecology</option>
+                                      <option value="Economics"  >Economics</option>
+                                      <option value="Education"  >Education</option>
+                                      <option value="Engineering"  >Engineering</option>
+                                      <option value="English 101"  >English 101</option>
+                                      <option value="Enviromental Studies and Forestry"  >Enviromental Studies and Forestry</option>
+                                      <option value="Ethics"  >Ethics</option>
+                                      <option value="Family and Consumer Service"  >Family and Consumer Service</option>
+                                      <option value="Film and Theater Studies"  >Film and Theater Studies</option>
+                                      <option value="Finance"  >Finance</option>
+                                      <option value="Geography"  >Geography</option>
+                                      <option value="Geology"  >Geology</option>
+                                      <option value="Health Care"  >Health Care</option>
+                                      <option value="History"  >History</option>
+                                      <option value="Human Resource Management(HRM)"  >Human Resource Management(HRM)</option>
+                                      <option value="IT/ WEB"  >IT/ WEB</option>
+                                      <option value="International Relation"  >International Relation</option>
+                                      <option value="International Trade"  >International Trade</option>
+                                      <option value="Law"  >Law</option>
+                                      <option value="Leadership Studies"  >Leadership Studies</option>
+                                      <option value="Linguistics"  >Linguistics</option>
+                                      <option value="Litreature"  >Litreature</option>
+                                      <option value="Logistics"  >Logistics</option>
+                                      <option value="Management"  >Management</option>
+                                      <option value="Marketing"  >Marketing</option>
+                                      <option value="Mathematics"  >Mathematics</option>
+                                      <option value="Medical Science"  >Medical Science</option>
+                                      <option value="Medicine"  >Medicine</option>
+                                      <option value="Music"  >Music</option>
+                                      <option value="Nursing"  >Nursing</option>
+                                      <option value="Nutrition Dietary"  >Nutrition Dietary</option>
+                                      <option value="Physics"  >Physics</option>
+                                      <option value="Philosophy"  >Philosophy</option>
+                                      <option value="Political Science"  >Political Science</option>
+                                      <option value="Psychology"  >Psychology</option>
+                                      <option value="Poetry"  >Poetry</option>
+                                      <option value="Public Administration"  >Public Administration</option>
+                                      <option value="Public Relation"  >Public Relation</option>
+                                      <option value="Religious Studies"  >Religious Studies</option>
+                                      <option value="Shakespeare"  >Shakespeare</option>
+                                      <option value="Social Work/Human Services"  >Social Work/Human Services</option>
+                                      <option value="Sociology"  >Sociology</option>
+                                      <option value="Sports"  >Sports</option>
+                                      <option value="Statistics"  >Statistics</option>
+                                      <option value="Technology"  >Technology</option>
+                                      <option value="Tourism"  >Tourism</option>
+                                      <option value="Urban Studies"  >Urban Studies</option>
+                                      <option value="Women and Gender Studies"  >Women and Gender Studies</option>
+                                      <option value="Zoology"  >Zoology</option>
+                                      <option value="Other"  >Other</option>
+                                    </select>
                                 </p>
-                                <p class="text-center">
-                                    <button class="octf-btn octf-btn-icon octf-btn-primary">Send Message<i class="flaticon-right-arrow-1"></i></button>
+
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Topic</label>
+                                   <input type="text" name="fname" class="wpcf7-form-control wpcf7-text jstopic" placeholder="Topic *" required="" >
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>State your instructions for this paper here: </label><br />
+                                    <textarea type="text" name="message" class="wpcf7-form-control wpcf7-textarea jsinstructions" placeholder="Paper Instructions"></textarea>
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Upload any reference files here: </label><br />
+                                    <input type="file" name="files" id="fileupload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
+  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Number of Pages [Double Spaced (275 Words Per Page), Single Spaced (550 Words Per Page)]</label><br />
+                                    <select id="dropdownno_ofpages" name="" class="dropdownno_ofpages" my_choice_order_type="">
+                                      <option value="" selected="selected" my_order_property="first">Please select  </option>
+                                      <option value="1 Page Single Spaced"  data-cost="5">1 Page Single Spaced</option>
+                                      <option value="1 Pages Double Spaced"  >1 Pages Double Spaced</option>
+                                      <option value="2 Pages Single Spaced"  >2 Pages Single Spaced</option>
+                                      <option value="2 Pages Double Spaced"  >2 Pages Double Spaced</option>
+                                      <option value="3 Pages Single Spaced"  >3 Pages Single Spaced</option>
+                                      <option value="3 Pages Double Spaced"  >3 Pages Double Spaced</option>
+                                      <option value="4 Pages Single Spaced"  >4 Pages Single Spaced</option>
+                                      <option value="4 Pages Double Spaced"  >4 Pages Double Spaced</option>
+                                      <option value="5 Pages Single Spaced"  >5 Pages Single Spaced</option>
+                                      <option value="5 Pages Double Spaced"  >5 Pages Double Spaced</option>
+                                      <option value="6 Pages Single Spaced"  >6 Pages Single Spaced</option>
+                                      <option value="6 Pages Double Spaced"  >6 Pages Double Spaced</option>
+                                      <option value="7 Pages Single Spaced"  >7 Pages Single Spaced</option>
+                                      <option value="7 Pages Double Spaced"  >7 Pages Double Spaced</option>
+                                      <option value="8 Pages Single Spaced"  >8 Pages Single Spaced</option>
+                                      <option value="8 Pages Double Spaced"  >8 Pages Double Spaced</option>
+                                      <option value="9 Pages Single Spaced"  >9 Pages Single Spaced</option>
+                                      <option value="9 Pages Double Spaced"  >9 Pages Double Spaced</option>
+                                      <option value="10 Pages Single Spaced"  >10 Pages Single Spaced</option>
+                                      <option value="10 Pages Double Spaced"  >10 Pages Double Spaced</option>
+                                      <option value="11 Pages Single Spaced"  >11 Pages Single Spaced</option>
+                                      <option value="11 Pages Double Spaced"  >11 Pages Double Spaced</option>
+                                      <option value="12 Pages Single Spaced"  >12 Pages Single Spaced</option>
+                                      <option value="12 Pages Double Spaced"  >12 Pages Double Spaced</option>
+                                      <option value="13 Pages Single Spaced"  >13 Pages Single Spaced</option>
+                                      <option value="13 Pages Double Spaced"  >13 Pages Double Spaced</option>
+                                      <option value="14 Pages Single Spaced"  >14 Pages Single Spaced</option>
+                                      <option value="14 Pages Double Spaced"  >14 Pages Double Spaced</option>
+                                      <option value="15 Pages Single Spaced"  >15 Pages Single Spaced</option>
+                                      <option value="15 Pages Double Spaced"  >15 Pages Double Spaced</option>
+                                      <option value="16 Pages Single Spaced"  >16 Pages Single Spaced</option>
+                                      <option value="16 Pages Double Spaced"  >16 Pages Double Spaced</option>
+                                      <option value="17 Pages Single Spaced"  >17 Pages Single Spaced</option>
+                                      <option value="17 Pages Double Spaced"  >17 Pages Double Spaced</option>
+                                      <option value="18 Pages Single Spaced"  >18 Pages Single Spaced</option>
+                                      <option value="18 Pages Double Spaced"  >18 Pages Double Spaced</option>
+                                      <option value="19 Pages Single Spaced"  >19 Pages Single Spaced</option>
+                                      <option value="19 Pages Double Spaced"  >19 Pages Double Spaced</option>
+                                      <option value="20 Pages Single Spaced"  >20 Pages Single Spaced</option>
+                                      <option value="20 Pages Double Spaced"  >20 Pages Double Spaced</option>
+                                    </select>
+
+                                </p>
+
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Number of Power Point Slides </label><br />
+                                    <select id="dropdownno_ofpptslides" name="" class="dropdownno_ofpptslides" my_choice_order_type="">
+                                      <option value="" selected="selected" my_order_property="first">Please select</option>
+                                      <option value="1"  data-cost="5">1</option>
+                                      <option value="2"  >2</option>
+                                      <option value="3"  >3</option>
+                                      <option value="4"  >4</option>
+                                      <option value="5"  >5</option>
+                                      <option value="6"  >6</option>
+                                      <option value="7"  >7</option>
+                                      <option value="8"  >8</option>
+                                      <option value="9"  >9</option>
+                                      <option value="10"  >10</option>
+                                      <option value="11"  >11</option>
+                                      <option value="12"  >12</option>
+                                      <option value="13"  >13</option>
+                                      <option value="14"  >14</option>
+                                      <option value="15"  >15</option>
+                                      <option value="16"  >16</option>
+                                      <option value="17"  >17</option>
+                                      <option value="18"  >18</option>
+                                      <option value="19"  >19</option>
+                                      <option value="20"  >20</option>
+                                    </select>
+                                </p>
+
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Number of sources/references</label><br />
+                                    <input type="text" name="fname" class="wpcf7-form-control wpcf7-text jsno_ofreferences" placeholder="Enter number of sources here " >
+                                </p>
+                                <p class="col-md-6 col-xs-12">
+                                  <label>First Name</label>
+                                    <input type="text" name="fname" class="wpcf7-form-control wpcf7-text jsfirstname" placeholder="First Name *" required="">
+                                </p>
+                                <p class="col-md-6 col-xs-12">
+                                  <label>Last Name</label>
+                                    <input type="text" name="lname" class="wpcf7-form-control wpcf7-text jslastname" placeholder="Last Name *" required="">
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Phone Number</label>
+                                    <input type="tel" name="phone" class="wpcf7-form-control wpcf7-text wpcf7-tel jsphonenumber" placeholder="Phone Number *" required="">
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Email</label>
+                                    <input type="email" name="email" class="wpcf7-form-control wpcf7-text wpcf7-email jsemail" placeholder="Your Email *" required="">
+                                </p>
+
+                                <p class="text-center col-md-12 col-xs-12">
+                                    <button class="octf-btn octf-btn-icon octf-btn-primary jssubmitworkbtn">Submit<i class="flaticon-right-arrow-1"></i></button>
                                 </p>
                             </div>
-                        </form>
+                        <!-- </form> -->
                     </div>
                 </div>
+
+                <!-- <hr />
+                <br />
+                <br /> -->
+
+
             </section>
         </div>
 
@@ -321,7 +514,7 @@
             </div>
             <div class="footer-bottom ">
                 <div class="container ">
-                    <p class="copyright-2 text-center "> &copy2022 DW Writers.   All Rights Reserved.</p>
+                    <p class="copyright-2 text-center "> &copy2022 DW Writers. Created By aduki - All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
@@ -339,6 +532,99 @@
     <script src="js/scripts.js"></script>
     <script src="js/header-mobile.js"></script>
     <script src="js/royal_preloader.min.js"></script>
+    <script src="./JS/firebase.js"> </script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+                import {
+                  getFirestore,
+                  setDoc,
+                  doc,
+                  query,
+                  serverTimestamp,
+                  orderBy,
+                } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore.js";
+
+
+                const firebaseConfig = {
+
+                    apiKey: "AIzaSyAc-XB_3QKyrkjDBLUS9gPmVo8f6eaukCk",
+                    authDomain: "dw-writers.firebaseapp.com",
+                    projectId: "dw-writers",
+                    storageBucket: "dw-writers.appspot.com",
+                    messagingSenderId: "472905116832",
+                    appId: "1:472905116832:web:288d427c6b5d169c382dc5",
+                };
+
+
+              // Initialize Firebase
+              initializeApp(firebaseConfig);
+
+              //initializing services
+               const db = getFirestore();
+
+                /////publishing article to firestore database
+//if(submitbutton){
+  submitbutton.addEventListener('click', () => {
+      if (firstname.value.length && papertopic.value.length) {
+          // generating id
+          let letters = 'abcdefghijklmnopqrstuvwxyz';
+          let WorkTitle = firstname.value.split(" ").join("-") + " " + lastname.value.split(" ").join("-") +"-"+papertopic.value.split(" ").join("-")+ " " + phonenumber.value.split(" ").join("-");
+          let id = '';
+          for (let i = 0; i < 4; i++) {
+              id += letters[Math.floor(Math.random() * letters.length)];
+          }
+
+
+
+          let date = new Date(); // for published at info
+          // setting up docName
+          let docName = `${WorkTitle}-${id}`;
+
+
+          //for firebase 9+
+
+          //document reference
+          const docRef = doc(db, 'Clients Work', docName);
+
+          //queries
+       //const queries = query(docRef, orderBy('createdAt'))
+          setDoc(docRef,{
+
+              client: firstname.value + lastname.value,
+              topic: papertopic.value,
+              type_of_paper: typeofpaper.value,
+              academic_level: academiclevel.value,
+              paper_type: rselpformat.value,
+              subject: subjectdropdown.value,
+              writing_instructions: custinstructions.value,
+              reference_files: workreffiles.value,
+              number_of_pages_required: no_ofpagesdropdown.value,
+              number_of_powerpoint_slides_required: no_ofpptslidesdropdown.value,
+              number_of_references_required: no_ofreferences.value,
+              customer_hone_number: phonenumber.value,
+              customer_email: email.value,
+
+
+              SubmittedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`,
+              createdAt: serverTimestamp()
+
+          })
+
+          ///////////////////////
+          .then(() => {
+               location.href = `/${docName}`;
+              //console.log('date entered');
+          })
+          .catch((err) => {
+              console.error(err);
+          })
+       }
+    })
+  //}
+</script>
+<script src="./JS/editor.js"></script>
+
+
 </body>
 
 </html>
