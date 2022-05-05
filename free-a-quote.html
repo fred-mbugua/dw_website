@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
+    <!-- <link rel="stylesheet" href="css/fileupload.min.css" />
+    <link rel="stylesheet" href="css/fileupload2.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 </head>
 
 <body class="royal_preloader">
@@ -66,6 +69,7 @@
                                                     <li><a href="free-a-quote.html">New Order</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a href="https://wa.me/254795006800/" style="color: green; font-size: 20px;"><i class="flaticon-003-whatsapp"></i> +254 722 407 105</a></li>
                                         </ul>
                                     </nav>
                                     <!-- #site-navigation -->
@@ -145,6 +149,7 @@
                                 </li>
                                 <li class="current-menu-item"><a href="free-a-quote.html">Order Now</a>
                                 </li>
+                                <li><a href="https://wa.me/254795006800/" style="color: green; font-size: 20px;"><i class="fa fa-whatsapp"></i> +254 722 407 105</a></li>
                             </ul>
                         </div>
                     </div>
@@ -210,7 +215,8 @@
                                                   <span class="wpcf7-list-item-label">Others</span><br /> -->
 
                                                   <select id="dropdownpprtyperbtn" name="" class="dropdownpapertype" my_choice_order_type="">
-                                                    <option value="MLA" selected="selected" my_order_property="first"> MLA</option>
+                                                    <option value="" data-cost="0" selected="selected" my_order_property="first" data-cost="5">Select the paper format</option>
+                                                    <option value="MLA"  data-cost="5">MLA</option>
                                                     <option value="APA"  >APA</option>
                                                     <option value="Chicago/Turabian"  >Chicago/Turabian</option>
                                                     <option value="Not Applicable"  >Not Applicable</option>
@@ -243,7 +249,7 @@
                                 <p class="col-md-12 col-xs-12">
                                   <label>Subject/Discipline</label><br />
                                     <select id="dropdownsubject" name="element_2" class="dropdownsubject_discipline" my_choice_order_type="">
-                                      <option value="" selected="selected" my_order_property="first">Select Subject</option>
+                                      <option value="" data-cost="0" selected="selected" my_order_property="first">Select Subject</option>
                                       <option value="Accounting"  data-cost="5">Accounting</option>
                                       <option value="Agriculture"  >Agriculture</option>
                                       <option value="Anthropology"  >Anthropology</option>
@@ -324,15 +330,50 @@
                                   <label>State your instructions for this paper here: </label><br />
                                     <textarea type="text" name="message" class="wpcf7-form-control wpcf7-textarea jsinstructions" placeholder="Paper Instructions"></textarea>
                                 </p>
+                                <div class="col-md-12 col-xs-12" style="border: 1px solid grey; border-radius: 7px;">
+                                  <h6>Upload any reference files here:</h6><br />
                                 <p class="col-md-12 col-xs-12">
-                                  <label>Upload any reference files here: </label><br />
-                                    <input type="file" name="files" id="fileupload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
-  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+
+                                  <label>Pdf File:</label><br />
+                                    <input type="file" name="files" id="file1upload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
+  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/msexcel, image/jpeg, image/x-png" multiple >
                                 </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Msword File:</label><br />
+                                    <input type="file" name="files" id="file1upload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
+  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/msexcel, image/jpeg, image/x-png" multiple >
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Image File:</label><br />
+                                    <input type="file" name="files" id="file2upload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
+  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/msexcel, image/jpeg, image/x-png" multiple >
+                                </p>
+                                <p class="col-md-12 col-xs-12">
+                                    <label>Docx file:</label><br />
+                                      <input type="file" name="files" id="file3upload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
+    accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/msexcel, image/jpeg, image/x-png" multiple >
+                                  </p>
+                                  <p class="col-md-12 col-xs-12">
+                                    <label>Excel File:</label><br />
+                                      <input type="file" name="files" id="file4upload" class="wpcf7-form-control wpcf7-text jsreferencefiles" placeholder="Upload here " id="docpicker"
+    accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/msexcel, image/jpeg, image/x-png" multiple >
+  </p><br />
+                                </div>
+
+                                <!-- <p class="col-md-12 col-xs-12">
+                                  <label>Upload any reference files here: </label><br />
+                                            <div class="card">
+                                							<div class="card-body">
+                                								<form>
+                                									<input id="image-uploadify" type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" multiple>
+                                								</form>
+                                							</div>
+                                						</div>
+                                </p> -->
                                 <p class="col-md-12 col-xs-12">
                                   <label>Number of Pages [Double Spaced (275 Words Per Page), Single Spaced (550 Words Per Page)]</label><br />
                                     <select id="dropdownno_ofpages" name="" class="dropdownno_ofpages" my_choice_order_type="">
-                                      <option value="" selected="selected" my_order_property="first">Please select  </option>
+                                      <option value="" data-cost="0" selected="selected" my_order_property="first">Please select  </option>
                                       <option value="1 Page Single Spaced"  data-cost="5">1 Page Single Spaced</option>
                                       <option value="1 Pages Double Spaced"  >1 Pages Double Spaced</option>
                                       <option value="2 Pages Single Spaced"  >2 Pages Single Spaced</option>
@@ -380,7 +421,7 @@
                                 <p class="col-md-12 col-xs-12">
                                   <label>Number of Power Point Slides </label><br />
                                     <select id="dropdownno_ofpptslides" name="" class="dropdownno_ofpptslides" my_choice_order_type="">
-                                      <option value="" selected="selected" my_order_property="first">Please select</option>
+                                      <option value="" data-cost="0" selected="selected" my_order_property="first">Please select</option>
                                       <option value="1"  data-cost="5">1</option>
                                       <option value="2"  >2</option>
                                       <option value="3"  >3</option>
@@ -424,11 +465,17 @@
                                   <label>Email</label>
                                     <input type="email" name="email" class="wpcf7-form-control wpcf7-text wpcf7-email jsemail" placeholder="Your Email *" required="">
                                 </p>
+                                <p class="col-md-12 col-xs-12">
+                                  <label>Your total cost in dollars is:</label><input  style="color:blue; font-size: 30px; font-weight: bold;" type="number" name="totalcharge" class="wpcf7-form-control wpcf7-text wpcf7-email ttlcost"   disabled>
+                                </p>
+
+                                <!-- <div><span  class="totalcost">0.00</span> </div> -->
 
                                 <p class="text-center col-md-12 col-xs-12">
-                                    <button class="octf-btn octf-btn-icon octf-btn-primary jssubmitworkbtn">Submit<i class="flaticon-right-arrow-1"></i></button>
+                                    <button class="octf-btn octf-btn-icon octf-btn-primary jssubmitworkbtn" >Go to Payments<i class="flaticon-right-arrow-1"></i></button>
                                 </p>
                             </div>
+
                         <!-- </form> -->
                     </div>
                 </div>
@@ -523,108 +570,36 @@
     <!-- #page -->
     <a id="back-to-top" href="#" class="show"><i class="flaticon-arrow-pointing-to-up"></i></a>
     <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/easypiechart.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/header-mobile.js"></script>
-    <script src="js/royal_preloader.min.js"></script>
-    <script src="./JS/firebase.js"> </script>
-    <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
-                import {
-                  getFirestore,
-                  setDoc,
-                  doc,
-                  query,
-                  serverTimestamp,
-                  orderBy,
-                } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore.js";
 
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script>
+              // $('select').on('change', function(){
+              //  //var sum = 0;
+              //  let cost = 0;
+              //
+              //  $('select :selected').each(function() {
+              //      //sum += Number($(this).val());
+              //      cost += Number($(this).data('cost'));
+              //  });
+              //
+              //   //$('#ttlcost').val(cost);
+              //   //$('input[name=totalcharge]').val(cost);
+              //    $('#cost').html(cost);
 
-                const firebaseConfig = {
+              $('select').on('change', function(){
 
-                    apiKey: "AIzaSyAc-XB_3QKyrkjDBLUS9gPmVo8f6eaukCk",
-                    authDomain: "dw-writers.firebaseapp.com",
-                    projectId: "dw-writers",
-                    storageBucket: "dw-writers.appspot.com",
-                    messagingSenderId: "472905116832",
-                    appId: "1:472905116832:web:288d427c6b5d169c382dc5",
-                };
+                var cost = 0;
 
+                $('select :selected').each(function() {
 
-              // Initialize Firebase
-              initializeApp(firebaseConfig);
+                    cost += Number($(this).data('cost'));
+                });
 
-              //initializing services
-               const db = getFirestore();
+                $('input[name=totalcharge]').val(cost);
+            });
+    </script>
 
-                /////publishing article to firestore database
-//if(submitbutton){
-  submitbutton.addEventListener('click', () => {
-      if (firstname.value.length && papertopic.value.length) {
-          // generating id
-          let letters = 'abcdefghijklmnopqrstuvwxyz';
-          let WorkTitle = firstname.value.split(" ").join("-") + " " + lastname.value.split(" ").join("-") +"-"+papertopic.value.split(" ").join("-")+ " " + phonenumber.value.split(" ").join("-");
-          let id = '';
-          for (let i = 0; i < 4; i++) {
-              id += letters[Math.floor(Math.random() * letters.length)];
-          }
+    
 
-
-
-          let date = new Date(); // for published at info
-          // setting up docName
-          let docName = `${WorkTitle}-${id}`;
-
-
-          //for firebase 9+
-
-          //document reference
-          const docRef = doc(db, 'Clients Work', docName);
-
-          //queries
-       //const queries = query(docRef, orderBy('createdAt'))
-          setDoc(docRef,{
-
-              client: firstname.value + lastname.value,
-              topic: papertopic.value,
-              type_of_paper: typeofpaper.value,
-              academic_level: academiclevel.value,
-              paper_type: rselpformat.value,
-              subject: subjectdropdown.value,
-              writing_instructions: custinstructions.value,
-              reference_files: workreffiles.value,
-              number_of_pages_required: no_ofpagesdropdown.value,
-              number_of_powerpoint_slides_required: no_ofpptslidesdropdown.value,
-              number_of_references_required: no_ofreferences.value,
-              customer_hone_number: phonenumber.value,
-              customer_email: email.value,
-
-
-              SubmittedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`,
-              createdAt: serverTimestamp()
-
-          })
-
-          ///////////////////////
-          .then(() => {
-               location.href = `/${docName}`;
-              //console.log('date entered');
-          })
-          .catch((err) => {
-              console.error(err);
-          })
-       }
-    })
-  //}
-</script>
-<script src="./JS/editor.js"></script>
-
-
-</body>
 
 </html>
